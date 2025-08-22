@@ -31,6 +31,10 @@
 
   & .btn {
     width: 100%;
+
+    &::before {
+      background-color: var(--surface-color);
+    }
   }
 
   & .separator {
@@ -86,6 +90,14 @@
       inset: 0;
       border-radius: 1.5rem;
       z-index: -1;
+    }
+
+    & .btn::before {
+      background-color: var(--text-color-primary);
+    }
+
+    & .btn::after {
+      background-color: var(--bg-color);
     }
   }
 
